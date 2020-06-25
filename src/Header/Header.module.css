@@ -1,0 +1,21 @@
+.container{
+    width: 95%;
+    padding-left: 5%;
+    margin-top: 15px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.brandName{
+    
+    align-content: center;
+}
+
+.links{
+    width: 50%;
+    margin-right: 4%;
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+}
