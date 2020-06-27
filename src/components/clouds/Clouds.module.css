@@ -1,0 +1,6 @@
+.cloud1{
+    transform: scaleX(2);
+    transition-timing-function: linear;
+    transition-duration: 2s;
+    transition: ease-in;
+}

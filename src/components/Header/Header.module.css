@@ -1,21 +1,23 @@
 .container{
-    width: 95%;
-    padding-left: 5%;
+    position: relative;
+    width: 100%;
     margin-top: 15px;
     display:flex;
     justify-content: space-between;
+    color: aliceblue;
 }
 
 .brandName{
-    
+    position: relative;
     align-content: center;
+    left:20px;
 }
 
 .links{
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
     width: 50%;
-    margin-right: 4%;
-    display:flex;
     list-style: none;
-    justify-content: space-between;
-    text-align: center;
+    
 }
