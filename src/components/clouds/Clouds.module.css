@@ -1,6 +1,51 @@
-.cloud1{
-    transform: scaleX(2);
-    transition-timing-function: linear;
-    transition-duration: 2s;
-    transition: ease-in;
+.cloud {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top:100px;
+    display: flex;
 }
+
+.cloud1{
+    opacity: 0.5;
+    animation-name: cloudanimation;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.cloud2{
+    opacity: 0.1;
+    animation-name: cloudanimation;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+.cloud3{
+    opacity: 0.3;
+    animation-name: cloudanimation;
+    animation-duration: 40s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes cloudanimation {
+    from{
+        transform:translateX(-150px);
+        
+    } 
+    to{
+        transform:translateX(1500px);
+        
+    }
+}
+
+/* .cloud2{
+    
+} */
