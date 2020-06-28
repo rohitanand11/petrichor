@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classes from "./searchBar.module.css";
 
 const SearchBar = (props) => {
-  console.log(props.suggestions);
+
   const renderUnOrderList = () => {
     if (props.suggestions.length === 0) {
       return null;
@@ -40,7 +40,7 @@ const SearchBar = (props) => {
       </div>
 
       <div className={classes.arrowContainer}>
-        <div className={classes.arrowIcon}>
+        <div className={classes.arrowIcon} onClick={props.renderWeather}>
           <FontAwesomeIcon icon="arrow-right" color="black" size="3x" />
         </div>
       </div>
