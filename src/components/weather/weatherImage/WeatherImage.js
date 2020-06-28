@@ -2,16 +2,18 @@ import React from "react";
 import classes from "./WeatherImage.module.css";
 
 const WeatherImage = (props) => {
+    console.log(props.pData);
   return (
     <div className={classes.WeatherImageContainer}>
-      <div>
         <img
-          src="props.data.current.weather_icons"
-          alt="weather image"
+          src={props.pData.current.weather_icons[0]}
+          alt="weather"
           className={classes.imageStyle}
         />
-      </div>
-  <h3 className={classes.weatherDescriptions}>{this.props.data.current.weatherweather_descriptions}</h3>
+      {/* <h3 className={classes.weatherDescriptions}> */}
+      <h3 className={classes.WeatherDescription}>
+        {props.pData.current.weather_descriptions[0]}
+      </h3>
     </div>
   );
 };
