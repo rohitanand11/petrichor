@@ -11,7 +11,7 @@ class App extends Component {
   state = {
     textValue: "",
     suggestions: [],
-    // searchArrowClick: false,
+    weatherData: null,
   };
 
   handleTextValue = (event) => {
@@ -38,6 +38,11 @@ class App extends Component {
     return fourSuggestions;
   };
 
+  handleRenderWeather = () => {
+    if(this.state.textValue!==''){
+      console.log("handleRenderWeather called");
+    }
+  }
   // handlesearchArrowClick = () => {
   //   this.setState({
   //     textValue: "",
@@ -48,16 +53,18 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <div className={classes.container}></div>
+      // <React.Fragment>
+        <div className={classes.container}>
         <Header />
         <Clouds />
         <SearchBar
           textValue={this.state.textValue}
           change={this.handleTextValue}
           suggestions={this.state.suggestions}
+          renderWeather={this.handleRenderWeather}
         />
-      </React.Fragment>
+        </div>
+      // </React.Fragment>
     );
   }
 }
