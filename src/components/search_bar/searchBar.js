@@ -1,20 +1,32 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classes from "./searchBar.module.css";
 
 const SearchBar = (props) => {
+  console.log(props.suggestions);
+  const renderUnOrderList = () => {
+    if (props.suggestions.length === 0) {
+      return null;
+    } else {
+      return <ul className={classes.listContainer}>{renderList()}</ul>;
+    }
+  };
 
-    console.log(props.suggestions);
-    const renderUnOrderList = () => {
-        if (props.suggestions.length===0){
-            return null;
-        } else {
-            return(<ul>{renderList()}</ul>);
-        }
-    }
-    const renderList = () => {
-            const list_arr=props.suggestions.map((el,index)=><li key={index}>{el}</li>);
-            return list_arr;
-    }
+  const renderList = () => {
+    const list_arr = props.suggestions.map((el, index) => (
+      <li key={index}>{el}</li>
+    ));
+    return list_arr;
+  };
+
+  // const arrowStyleType = () => {
+  //   if(props.arrowClass===false){
+  //     return "classes.arrowIcon"
+  //   } else {
+  //     return "classes.arrowIconAnimated"
+  //   }
+  // }
+
   return (
     <div className={classes.container}>
       <div className={classes.inputAndSuggestions}>
@@ -26,7 +38,12 @@ const SearchBar = (props) => {
         />
         {renderUnOrderList()}
       </div>
-      {/* searchicon */}
+
+      <div className={classes.arrowContainer}>
+        <div className={classes.arrowIcon}>
+          <FontAwesomeIcon icon="arrow-right" color="black" size="3x" />
+        </div>
+      </div>
     </div>
   );
 };
