@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import Header from "./components/Header/Header";
 import Clouds from "./components/clouds/Clouds";
 import SearchBar from "./components/search_bar/searchBar";
+import Weather from "./components/weather/weatherContainer/Weather";
 
 import "./assets/icons/Icons";
+import weatherData from "./assets/data/weatherData";
 import city_array from "./assets/data/citiesArray";
 import classes from "./App.module.css";
 
@@ -43,6 +45,16 @@ class App extends Component {
       console.log("handleRenderWeather called");
     }
   }
+
+  checkToWeatherRender = () => {
+    const dummy_data = {...weatherData};
+    console.log(dummy_data);
+    // if(this.state.weatherData===null){
+    //   return null;
+    // } else {
+      return (<Weather pData={dummy_data}/>);
+    // }
+  }
   // handlesearchArrowClick = () => {
   //   this.setState({
   //     textValue: "",
@@ -63,6 +75,7 @@ class App extends Component {
           suggestions={this.state.suggestions}
           renderWeather={this.handleRenderWeather}
         />
+        {this.checkToWeatherRender()}
         </div>
       // </React.Fragment>
     );
