@@ -1,9 +1,12 @@
 .WeatherDetailsContainer{
-
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ulStyle{
     margin: 0px;
+    
     list-style: none;
     font-size: 30px;
     color: whitesmoke;

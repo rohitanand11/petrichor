@@ -6,10 +6,8 @@
 }
 
 .imageStyle{
-    width:250px;
+    width:400px;
     /* height:500px; */
-    border:3px solid rgb(26, 31, 46);
-    border-radius: 10px;
 }
 
 .WeatherDescription{

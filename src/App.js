@@ -45,8 +45,7 @@ class App extends Component {
     console.log("handleRenderWeather called");
     if(this.state.textValue!==''){
       const city_name = this.state.textValue;
-      const url_for_current = "https://cors-anywhere.herokuapp.com/https://api.weatherstack.com/current?access_key=76a8ed6e11c31f704b53d7b22c3fe43b";
-      const search_url =`${url_for_current}&query=${city_name}`;
+      const search_url =`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=2f1da16080e01aef4a330af3b2409d51`;
       console.log(search_url);
       fetch(search_url)
       .then((response)=>response.json())
