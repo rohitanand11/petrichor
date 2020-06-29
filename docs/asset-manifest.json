@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/petrichor/static/css/main.dec346ef.chunk.css",
-    "main.js": "/petrichor/static/js/main.b660e4ac.chunk.js",
-    "main.js.map": "/petrichor/static/js/main.b660e4ac.chunk.js.map",
+    "main.css": "/petrichor/static/css/main.a43e5f51.chunk.css",
+    "main.js": "/petrichor/static/js/main.7a7c27f3.chunk.js",
+    "main.js.map": "/petrichor/static/js/main.7a7c27f3.chunk.js.map",
     "runtime-main.js": "/petrichor/static/js/runtime-main.0635094a.js",
     "runtime-main.js.map": "/petrichor/static/js/runtime-main.0635094a.js.map",
     "static/js/2.ec59d8a0.chunk.js": "/petrichor/static/js/2.ec59d8a0.chunk.js",
     "static/js/2.ec59d8a0.chunk.js.map": "/petrichor/static/js/2.ec59d8a0.chunk.js.map",
     "index.html": "/petrichor/index.html",
-    "precache-manifest.21a2d679a637f402c718410dab36f8ba.js": "/petrichor/precache-manifest.21a2d679a637f402c718410dab36f8ba.js",
+    "precache-manifest.2ebfdcb2219409d9e422f6e8f4ed4d07.js": "/petrichor/precache-manifest.2ebfdcb2219409d9e422f6e8f4ed4d07.js",
     "service-worker.js": "/petrichor/service-worker.js",
-    "static/css/main.dec346ef.chunk.css.map": "/petrichor/static/css/main.dec346ef.chunk.css.map",
+    "static/css/main.a43e5f51.chunk.css.map": "/petrichor/static/css/main.a43e5f51.chunk.css.map",
     "static/js/2.ec59d8a0.chunk.js.LICENSE.txt": "/petrichor/static/js/2.ec59d8a0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0635094a.js",
     "static/js/2.ec59d8a0.chunk.js",
-    "static/css/main.dec346ef.chunk.css",
-    "static/js/main.b660e4ac.chunk.js"
+    "static/css/main.a43e5f51.chunk.css",
+    "static/js/main.7a7c27f3.chunk.js"
   ]
 }

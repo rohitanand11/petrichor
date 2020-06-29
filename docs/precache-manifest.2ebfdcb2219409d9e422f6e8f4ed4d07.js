@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1cfd2c6538d5b1d0a9285d58c56e7c6",
+    "revision": "ab61ea1f398e5b9cb38fe51449b0e86a",
     "url": "/petrichor/index.html"
   },
   {
-    "revision": "e9a30d9984fdda63d3dc",
-    "url": "/petrichor/static/css/main.dec346ef.chunk.css"
+    "revision": "66d23b7708cb98193a20",
+    "url": "/petrichor/static/css/main.a43e5f51.chunk.css"
   },
   {
     "revision": "2fa7763e59e368a9c866",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/petrichor/static/js/2.ec59d8a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e9a30d9984fdda63d3dc",
-    "url": "/petrichor/static/js/main.b660e4ac.chunk.js"
+    "revision": "66d23b7708cb98193a20",
+    "url": "/petrichor/static/js/main.7a7c27f3.chunk.js"
   },
   {
     "revision": "19246158cd700522b7d4",
