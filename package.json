@@ -1,6 +1,6 @@
 {
   "homepage": "https://rohitanand11.github.io/petrichor/",
-  "name": "weather-app",
+  "name": "weather_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
