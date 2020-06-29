@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Petrichor/static/css/main.dec346ef.chunk.css",
+    "main.js": "/Petrichor/static/js/main.fdb48b1d.chunk.js",
+    "main.js.map": "/Petrichor/static/js/main.fdb48b1d.chunk.js.map",
+    "runtime-main.js": "/Petrichor/static/js/runtime-main.2ba8bf13.js",
+    "runtime-main.js.map": "/Petrichor/static/js/runtime-main.2ba8bf13.js.map",
+    "static/js/2.f5d9dce2.chunk.js": "/Petrichor/static/js/2.f5d9dce2.chunk.js",
+    "static/js/2.f5d9dce2.chunk.js.map": "/Petrichor/static/js/2.f5d9dce2.chunk.js.map",
+    "index.html": "/Petrichor/index.html",
+    "precache-manifest.9c5fa814ef3fd3a8f716822ecb8c87b7.js": "/Petrichor/precache-manifest.9c5fa814ef3fd3a8f716822ecb8c87b7.js",
+    "service-worker.js": "/Petrichor/service-worker.js",
+    "static/css/main.dec346ef.chunk.css.map": "/Petrichor/static/css/main.dec346ef.chunk.css.map",
+    "static/js/2.f5d9dce2.chunk.js.LICENSE.txt": "/Petrichor/static/js/2.f5d9dce2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ba8bf13.js",
+    "static/js/2.f5d9dce2.chunk.js",
+    "static/css/main.dec346ef.chunk.css",
+    "static/js/main.fdb48b1d.chunk.js"
+  ]
+}
