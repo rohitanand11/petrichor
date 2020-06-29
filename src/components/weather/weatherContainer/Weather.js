@@ -4,7 +4,6 @@ import WeatherImage from '../weatherImage/WeatherImage';
 import WeatherDetails from '../weatherDetails/WeatherDetails';
 
 const Weather = (props) => {
-    console.log(props.pData);
     return(
         <div>
             <div className={classes.weatherContainer}>

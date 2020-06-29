@@ -5,7 +5,7 @@ import SearchBar from "./components/search_bar/searchBar";
 import Weather from "./components/weather/weatherContainer/Weather";
 
 import "./assets/icons/Icons";
-import weatherData from "./assets/data/weatherData";
+//import weatherData from "./assets/data/weatherData";
 import city_array from "./assets/data/citiesArray";
 import classes from "./App.module.css";
 
@@ -14,6 +14,7 @@ class App extends Component {
     textValue: "",
     suggestions: [],
     weatherData: null,
+    showWeather:false,
   };
 
   handleTextValue = (event) => {
@@ -41,18 +42,30 @@ class App extends Component {
   };
 
   handleRenderWeather = () => {
+    console.log("handleRenderWeather called");
     if(this.state.textValue!==''){
-      console.log("handleRenderWeather called");
+      const city_name = this.state.textValue;
+      const url_for_current = "http://api.weatherstack.com/current?access_key=76a8ed6e11c31f704b53d7b22c3fe43b";
+      const search_url =`${url_for_current}&query=${city_name}`;
+      console.log(search_url);
+      fetch(search_url)
+      .then((response)=>response.json())
+      .then((res)=>this.setState({textValue: "",suggestions: [],weatherData:res}));
+      console.log(this.state.weatherData);
     }
   }
 
   checkToWeatherRender = () => {
-    const dummy_data = {...weatherData};
-    console.log(dummy_data);
+    //const dummy_data = {...weatherData};
+    //console.log(dummy_data);
     // if(this.state.weatherData===null){
     //   return null;
     // } else {
-      return (<Weather pData={dummy_data}/>);
+      if(this.state.weatherData===null){
+        return null;
+      } else {
+        return (<Weather pData={this.state.weatherData}/>);
+      }
     // }
   }
   // handlesearchArrowClick = () => {

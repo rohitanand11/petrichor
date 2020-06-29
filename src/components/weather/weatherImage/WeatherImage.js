@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./WeatherImage.module.css";
 
 const WeatherImage = (props) => {
-    console.log(props.pData);
   return (
     <div className={classes.WeatherImageContainer}>
         <img

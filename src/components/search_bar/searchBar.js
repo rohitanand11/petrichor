@@ -19,14 +19,6 @@ const SearchBar = (props) => {
     return list_arr;
   };
 
-  // const arrowStyleType = () => {
-  //   if(props.arrowClass===false){
-  //     return "classes.arrowIcon"
-  //   } else {
-  //     return "classes.arrowIconAnimated"
-  //   }
-  // }
-
   return (
     <div className={classes.container}>
       <div className={classes.inputAndSuggestions}>
