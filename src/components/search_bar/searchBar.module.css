@@ -7,7 +7,7 @@
 
 .inputAndSuggestions{
     min-height: 400px;
-    width: 60%;
+    width: 50%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +15,7 @@
 
 .inputClass{
     height: 45px;
+    width: 100%;
     border:5px solid darkslateblue;
     border-radius: 15px;
     font-size: 40px;
@@ -35,7 +36,8 @@
 
 .arrowContainer{
     top:5px;
-    left: 40px;
+    padding-left: 15px;
+    /* left: 40px; */
     position: relative;
 }
 
