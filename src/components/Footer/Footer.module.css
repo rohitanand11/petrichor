@@ -1,0 +1,18 @@
+.container{
+    display:flex;
+    justify-content: space-between;
+    color: aliceblue;
+    background-color: #11131d;
+}
+
+.brandName{
+    align-content: center;
+    padding-left: 30px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    list-style: none;
+}
