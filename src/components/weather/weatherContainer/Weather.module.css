@@ -1,3 +1,10 @@
+.WeatherMainContainer{
+    margin:0;
+    padding:0;
+    padding-bottom: 140px;
+}
+
+
 .weatherContainer{
     display: flex;
     justify-content: space-evenly;
