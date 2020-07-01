@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Clouds from "./components/clouds/Clouds";
 import SearchBar from "./components/search_bar/searchBar";
 import Weather from "./components/weather/weatherContainer/Weather";
+import Footer from "./components/Footer/Footer";
 
 import "./assets/icons/Icons";
 //import weatherData from "./assets/data/weatherData";
@@ -14,7 +15,7 @@ class App extends Component {
     textValue: "",
     suggestions: [],
     weatherData: null,
-    showWeather:false,
+    showWeather: false,
   };
 
   handleTextValue = (event) => {
@@ -43,16 +44,18 @@ class App extends Component {
 
   handleRenderWeather = () => {
     console.log("handleRenderWeather called");
-    if(this.state.textValue!==''){
+    if (this.state.textValue !== "") {
       const city_name = this.state.textValue;
-      const search_url =`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=2f1da16080e01aef4a330af3b2409d51`;
+      const search_url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=2f1da16080e01aef4a330af3b2409d51`;
       console.log(search_url);
       fetch(search_url)
-      .then((response)=>response.json())
-      .then((res)=>this.setState({textValue: "",suggestions: [],weatherData:res}));
+        .then((response) => response.json())
+        .then((res) =>
+          this.setState({ textValue: "", suggestions: [], weatherData: res })
+        );
       console.log(this.state.weatherData);
     }
-  }
+  };
 
   checkToWeatherRender = () => {
     //const dummy_data = {...weatherData};
@@ -60,13 +63,13 @@ class App extends Component {
     // if(this.state.weatherData===null){
     //   return null;
     // } else {
-      if(this.state.weatherData===null){
-        return null;
-      } else {
-        return (<Weather pData={this.state.weatherData}/>);
-      }
+    if (this.state.weatherData === null) {
+      return null;
+    } else {
+      return <Weather pData={this.state.weatherData} />;
+    }
     // }
-  }
+  };
   // handlesearchArrowClick = () => {
   //   this.setState({
   //     textValue: "",
@@ -78,7 +81,7 @@ class App extends Component {
   render() {
     return (
       // <React.Fragment>
-        <div className={classes.container}>
+      <div className={classes.container}>
         <Header />
         <Clouds />
         <SearchBar
@@ -88,7 +91,8 @@ class App extends Component {
           renderWeather={this.handleRenderWeather}
         />
         {this.checkToWeatherRender()}
-        </div>
+        <Footer/>
+      </div>
       // </React.Fragment>
     );
   }
