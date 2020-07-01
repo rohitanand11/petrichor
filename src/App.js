@@ -90,7 +90,8 @@ class App extends Component {
           suggestions={this.state.suggestions}
           renderWeather={this.handleRenderWeather}
         />
-        {this.checkToWeatherRender()}
+
+        {this.state.weatherData && this.checkToWeatherRender()}
         <Footer/>
       </div>
       // </React.Fragment>

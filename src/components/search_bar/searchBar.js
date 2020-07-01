@@ -24,6 +24,7 @@ const SearchBar = (props) => {
       <div className={classes.inputAndSuggestions}>
         <input
           type="text"
+          placeholder="Enter city name"
           value={props.textValue}
           onChange={props.change}
           className={classes.inputClass}
